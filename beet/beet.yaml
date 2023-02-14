@@ -1,0 +1,39 @@
+id: ""
+name: ""
+description: ""
+author: "2mal3"
+version: "v0.1.0"
+minecraft: "1.19"
+
+output: "build"
+
+data_pack:
+  name: ""
+  load:
+    - "src"
+
+pipeline:
+  - beet.contrib.rename_files
+  - mecha
+  - plugins.remove_empty_functions
+  - plugins.installation_advancement
+require:
+  - bolt
+
+meta:
+  version: 100
+
+  bolt:
+    entrypoint:
+      - ""
+
+  rename_files:
+    data_pack:
+      match:
+        functions: ":*"
+      find: '((?!.*-).+)'
+      replace: '\1/child'
+
+  installation_advancement:
+    icon:
+      item: "minecraft:cobblestone"
