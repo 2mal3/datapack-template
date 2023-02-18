@@ -72,7 +72,6 @@ function uninstall {
 
     # Deletes the scoreboards
     scoreboard objectives remove ___.data
-    scoreboard objectives remove 2mal3.debug_mode
 
     # Sends an uninstallation message to all players
     tellraw @a {"text":"<name> <%config.version.str%> by 2mal3 was successfully uninstalled.","color": "green"}
