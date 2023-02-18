@@ -6,6 +6,8 @@ on:
       - '**.bolt'
       - '**.json'
       - 'beet.yaml'
+    tags-ignore:
+      - 'v*.*.*'
   pull_request:
   workflow_dispatch:
 

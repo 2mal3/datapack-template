@@ -2,9 +2,11 @@ name: Lint
 
 on:
   push:
-      paths:
-        - '**.mc'
-        - 'config.json'
+    paths:
+      - '**.mc'
+      - 'config.json'
+    tags-ignore:
+      - 'v*.*.*'
   pull_request:
   workflow_dispatch:
 
