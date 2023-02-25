@@ -35,7 +35,6 @@ jobs:
         with:
           path: datapack
           artifact_name: datapack-raw
-          force_include_files: pack.png
       - name: Download datapack-raw
         uses: actions/download-artifact@v3
         with:
