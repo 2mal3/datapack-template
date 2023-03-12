@@ -1,3 +1,3 @@
 # beet datapack-template
 
-_v1.0.2_
+_v1.1.0_
