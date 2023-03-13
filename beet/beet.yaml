@@ -11,7 +11,7 @@ data_pack:
   name: ""
   description: "v0.1.0"
   load:
-    - data: "src"
+    - "src"
     - pack.png: "pack.png"
 
 
